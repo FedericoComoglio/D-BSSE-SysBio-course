@@ -409,30 +409,30 @@ apply(M, 2, f)
 
 #save it as ourdata.txt
 
-read.table('Desktop/SCU_RCourse/ourdata.txt', header = FALSE)
-read.table('Desktop/SCU_RCourse/ourdata.txt', header = TRUE)
+read.table('ourdata.txt', header = FALSE)
+read.table('ourdata.txt', header = TRUE)
 
 #let's add a header
 #Name	Day	Month	Year
 
-read.table('Desktop/SCU_RCourse/ourdata.txt', header = FALSE)
-read.table('Desktop/SCU_RCourse/ourdata.txt', header = TRUE)
-read.table('Desktop/SCU_RCourse/ourdata.txt', header = FALSE, skip = 2)
+read.table('ourdata.txt', header = FALSE)
+read.table('ourdata.txt', header = TRUE)
+read.table('ourdata.txt', header = FALSE, skip = 2)
 #field separator
-read.table('Desktop/SCU_RCourse/ourdata.txt', header = TRUE, sep = ' ')
-read.table('Desktop/SCU_RCourse/ourdata.txt', header = TRUE, sep = '\t')
+read.table('ourdata.txt', header = TRUE, sep = ' ')
+read.table('ourdata.txt', header = TRUE, sep = '\t')
 
 #a note on unequal field counts (fill). 
 #Modify the data by removing the entry in (m,n).
-read.table('Desktop/SCU_RCourse/ourdata.txt', header = TRUE)	#ops...
-read.table('Desktop/SCU_RCourse/ourdata.txt', header = TRUE, fill = TRUE)
+read.table('ourdata.txt', header = TRUE)	#ops...
+read.table('ourdata.txt', header = TRUE, fill = TRUE)
 
 #reading Excel spreadsheet. 
 #avoid using .xls, .xlsx. Export to CSV files
 #prepare the csv file, Name,Day,Month,Year	then
-read.csv('Desktop/SCU_RCourse/ourdata.csv', header = TRUE)
+read.csv('ourdata.csv', header = TRUE)
 
-mydata <- read.csv('Desktop/SCU_RCourse/ourdata.csv', header = TRUE)
+mydata <- read.csv('ourdata.csv', header = TRUE)
 
 #editing data frames
 mydata.edited <- edit(mydata)
