@@ -1,0 +1,11 @@
+list all variables defined within a workspace
+list all variables defined within a workspace
+ls()
+create a variable
+v <- 1 : 10
+and remove it
+rm(v)
+create two of them
+v <- 1 : 10
+w <- 1.5 * v	#notice vectorization
+save the workspace to a file
