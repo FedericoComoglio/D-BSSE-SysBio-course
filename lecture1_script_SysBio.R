@@ -18,6 +18,7 @@
 ls()
 #create a variable
 v <- 1 : 10
+v = 1:10
 #and remove it
 rm(v)
 #create two of them
@@ -54,7 +55,7 @@ apropos('plot')
 #getting and setting my working directory
 getwd()
 dir()
-list.files()
+list.files('../')
 setwd('wd')
 setwd('../')
 
@@ -87,6 +88,8 @@ a * 4 -> c
 b == c
 
 (a <- 2)
+a = 2
+a
 
 #vectors
 c(3,5,6)
@@ -101,6 +104,7 @@ v + 5	#vectorization (of +)
 v ^ 2	#vectorization (of ^)
 w <- v + 1; w		# ; separates commands that are entered on the same line
 names(w) <- c('Exp1', 'Exp2', 'Exp3')
+w
 w[1]
 w['Exp1']
 
@@ -114,17 +118,18 @@ w
 c('1', '2', '3')	#a vector of class character
   
 #and finally
-c(letters[1:5], 1 : 5)	#conversion to least restrictive type
+c(letters[1:5], 1 : 5)	 * 3 #conversion to least restrictive type
 
 #BMI, at least 3 volunteers!
-weight <- c()
-height <- c()  
+weight <- c( 60, 58 )
+height <- c( 170, 169 ) / 100 
 ( bmi <- weight / height ^ 2 )
 
 #sequences
 c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20) #want to go up to 100?
 1:100
 100:1
+rev( 1 : 100 )
 
 #with repeated elements
 c(1,1,1,1,1,1)
@@ -145,7 +150,7 @@ M <- matrix(1:9, ncol = 3)
 M <- matrix(1:10, ncol = 3)		#ops...
 M
 M <- matrix(1:9, nrow = 3)
-M <- matrix(1:9, nrow = 3, ncol = 3)
+M <- matrix(1:12, nrow = 2, ncol = 6)
 #fill by row
 N <- matrix(1:9, nrow = 3, byrow = TRUE)
 
@@ -191,6 +196,8 @@ cbind( M, last = c(-11,-10,-9) )
 cbind( first = c(10,11,12), M )
 rbind( c(10,11,12), M )
 
+#######
+#WEEK 2
 #factors (encoding of categorical variables)
 #a factor has a set of levels
 
